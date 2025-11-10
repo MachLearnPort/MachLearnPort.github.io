@@ -60,38 +60,57 @@
 
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<h3 class="major">Summary</h3>
-								<p>Although my interests are vast, a large part of my portfolio is focused on cyber security, machine learning, predictive analytics, statistical analysis and process optimization. With that being said, I have compiled a list of my favorite projects (scroll down). These projects are broad in experiences, and range from statistical analytics on large datasets, coding machine learning solutions for the manufacturing sector and numerical modelling. I am always looking to apply and expand my knowledge in new and innovative applications, so be sure to periodically check out my latest conquests. If anything I have worked on sparks your interest or you would like to know more, feel free to <a href="#contact">contact me</a>.</p>
-								
-								<h3 class="major">Log Abstraction for Information Security</h3>
-								<span class="image main"><img src="images/Pic04.jpg" alt="" /></span>
-								<p>When I speak about ML in cyber security, I typically discuss and contrast the traditional methods of threat detection versus the new methods employed using machine learning algorithms. The traditional static approach to security is to have a large corpus of IoCs (e.g. hashes, ips, etc.) from which you search our current security sources (i.e. NIDS, HIDS, SIEM, etc.). This differs from the dynamic approach which typically looks for anomalous behavior. Both methods are generally mature, but are flawed (in my opinion) on one major underpinning - the need for strict data normalization.</p>
-								<p>Data normalization is the bane of any security engineer and is exasperated by the industries inability to agree on a common log or event format, with many developing their own standards (i.e. Elastic ECS, Splunk CIM, CEF, etc.). This problem results in the difficult task of correlating events between environments and tools, thus reducing efficacy, visibility and coverage.</p>
-								<p>With the problem described, I have been working with the Dalhousie NIMS lab to develop methods that circumvent the need for strict log parsing. If ML can identify patterns in network traffic, it can definitely be used to identify and abstract various log characteristics, and in doing so unlocks a new perspective of security analytics. Although automated log parsing via ML is an area of active research, our research described in the following paper: <a href="https://dl.acm.org/doi/fullHtml/10.1145/3465481.3470083"> Log Abstraction for Information Security: Heuristics and Reproducibility</a> and presented at the ARES 2021 conference, is scoped to security use cases</p>
-								<p>This paper is part of a broader research project to develop a novel machine learning approach to security that avoids the need for static analysis and manual log parsing - a pure ML pipeline and methodology for security detection. Feel free to <a href="#contact">contact me</a>, if you would like to know more.</p>
+							<h2 class="major">Work</h2>
+							<span class="image main"><img src="images/pic02.jpg" alt="Work cover" /></span>
 
-								<h3 class="major">TPO for HR Operational Intelligence</h3>
-								<span class="image main"><img src="images/Pic02-3.jpg" alt="" /></span>
-								<p> With my PhD coming to an end I began to ask myself – what’s next? Having spent over a decade in various technical fields, I FINALLY had some semblance of understanding regarding the direction of technology and the ‘state of the art’. In my mind, there was no bigger opportunity than in the field of artificial intelligence. With the explosion of big data and cluster computing, the current opportunities of ML seem endless. Having spent most of my academic and professional career engineering for the optimal process/design, coupled with my experience in algorithm development, it appeared that I was built for building ML platforms for optimization problems.</p>
-								<p>With that being said, I co-created a startup called Alitheia Technologies Inc, and partnered with friend who has an amazing business and sales acumen – thus creating a multi-disciplinary team that was ready to tackle the upcoming AI revolution.  This company is centered on a platform I developed called Tailored Process Optimization (TPO), which can be thought of as the brain child of Lean-Six Sigma, ML and process optimization.</p>
-								<p>In our first case study, we looked at an HR dataset for a potential client and analyzed attrition. The outcomes of the model were vast, and truly surpassed our expectations. TPO was capable of generating an optimal candidate based on historical data, rank the current employees based on their risk of attrition, and provide strategic recommendations on how to best minimize attrition for high risk employees. The application of TPO is vast, and although my summary is brief, feel free to <a href="#contact">contact me</a>, if you would like to know more.</p>
+							<h3 class="major">Summary</h3>
+							<p>I build production AI for cyber. My recent work centers on SOC-grade LLM platforms (RAG, tool-use, agentic orchestration) and unsupervised detection models that automate investigations, raise detection fidelity, and close the analyst feedback loop—with observability, safety, and cost efficiency baked in. I also co-lead academic research in threat analytics and mentor startups on secure-by-design GenAI adoption. Highlights below.</p>
 
+							<h3 class="major">SOC-Grade LLM Platform (Managed Detection & Response)</h3>
+							<span class="image main"><img src="images/Pic04.jpg" alt="SOC LLM Platform" /></span>
+							<p>Designed and deployed production LLM capabilities inside the SOC to automate investigation steps and summarize outcomes for analysts.</p>
+							<ul>
+								<li>RAG + tool-calling pipelines with guardrails and eval harnesses; agentic orchestration for multi-step investigations.</li>
+								<li>Human-in-the-loop feedback integrated to continuously improve precision/recall and analyst trust.</li>
+								<li>End-to-end profiling to cut inference latency and cost without sacrificing safety.</li>
+							</ul>
 
-								<h3 class="major">Intelligent Nozzle Design using ML</h3>
-								<span class="image main"><img src="images/pic02-2.jpg" alt="" /></span>
-								<p>This project was centered on AI design for the manufacturing sector. The objective of this project was to use ML to design the best possible nozzle for abrasive waterjet machining (AWJM). I presented this work at the 23rd International Conference on Waterjetting in Seattle (<a href="https://www.researchgate.net/publication/312176634_Optimized_abrasive_waterjet_nozzle_design_using_genetic_algorithms"> Optimized abrasive waterjet nozzle design using genetic algorithms</a>). Due to the very violent nature and complex flow phenomena associated with AWJ’s, nozzle optimization has relied on the classical iterative design process… until now.</p>
-								<p>This project all started when I read a very interesting paper by Dr. Narayanan et al. called <a href="http://www.sciencedirect.com/science/article/pii/S0924013613002112" > Modelling of abrasive particle energy in water jet machining </a>. In this paper, they present a 1D computational fluid dynamics (CFD) model for predicting abrasive particle velocities within 5% error. For anyone that knows anything about CFD, modelling a 3 phase, supersonic, compressible flow is just about the last thing you want to tackle, let only getting only 5% error. In seeing how revolutionary this model was, I reached out to Dr. Narayanan, who graciously allowed me use of his model. Since I already linked the paper, the rest is pretty much history. In summary, we used evolutionary ML algorithms to develop an optimization program. The output of the program was an optimal nozzle design configurations (i.e. nozzle and orifice diameters, mixing chamber sizes, etc); which generated, on average, a 15% increase in cutting efficiency!
-								</p>
+							<h3 class="major">Automated Investigation & Analyst Copilot Services</h3>
+							<span class="image main"><img src="images/pic02-3.jpg" alt="Analyst Copilot" /></span>
+							<p>Production services that triage alerts, perform structured lookups, and generate defensible investigation reports.</p>
+							<ul>
+								<li>Composable handlers for enrichment (process, network, identity) with policy-driven routing.</li>
+								<li>LLM explainability, error tracing, and audit artifacts to support SOC reviews.</li>
+								<li>Operational KPIs: resolution time, escalation rate, and false-positive reduction.</li>
+							</ul>
 
+							<h3 class="major">Unsupervised Threat Detection & Log Abstraction</h3>
+							<span class="image main"><img src="images/Pic04.jpg" alt="Log Abstraction Research" /></span>
+							<p>Academic/industry research on learning patterns directly from heterogeneous telemetry—minimizing brittle normalization layers and enabling broader coverage across SIEM/NDR/EDR sources. See the ARES paper <a href="https://dl.acm.org/doi/fullHtml/10.1145/3465481.3470083" target="_blank" rel="noopener">Log Abstraction for Information Security: Heuristics and Reproducibility</a>.</p>
 
-								<h3 class="major">AI Winglet Design</h3>
-								<span class="image main"><img src="images/pic02-1.jpg" alt="" /></span>
-								<p>My early academic and professional career was focused on aerospace engineering applications. Ever since receiving my glider and private pilots license in my teens, I was hooked on learning everything I could about the development of flight – plus the title of being an Aerospace Engineering sounded pretty cool!</p>
-								<p>At the end of my undergraduate career, I had the opportunity to work on a research team that was developing AI design systems for a light aircraft manufacture. My role on the team was to develop an intelligent winglet design module. The objective was to take a generic airfoil and wing shape, and based on the various flight characteristics (i.e. airspeed, angle-of-attack, altitude etc.) of that aircraft, have my expert system design the best possible winglet. Having gone through the frustrating iterative design process in many case projects, I was eager to create something that would make my life easier and produce potentially better designs.</p>
-								<p>The model worked using MATLAB and an API between a CFD vortex lattice simulator called AVL. The dimensions of the winglet would be generated through my ML program, which was then fed into AVL, which would then output the various lift and drag metrics for that specific wing/winglet configuration. The model would then tune the winglet design to maximize the lift-to-drag ratio. As seen from the before and after photos in the header image, the ML program created considerable design improvements, resulting in a 12% increase in performance.</p>
+							<h3 class="major">Graph-Based Threat Analytics</h3>
+							<span class="image main"><img src="images/pic02-2.jpg" alt="Graph Analytics" /></span>
+							<p>University collaborations applying graph theory + ML to attribute behaviors and surface campaign-level patterns across noisy security data. Focus areas: entity resolution, rare-path detection, and high-precision clustering for IR.</p>
+
+							<h3 class="major">GenAI Risk & Secure-by-Design Advisory</h3>
+							<span class="image main"><img src="images/pic02-1.jpg" alt="GenAI Risk Advisory" /></span>
+							<p>Advisor to startups and programs on GenAI safety, policy, and architecture: data governance, prompt/response controls, red-teaming, and supply-chain hygiene for LLM applications.</p>
+
+							<details>
+								<summary><strong>Earlier Work (Archive)</strong></summary>
+								<h4>TPO for HR Operational Intelligence</h4>
+								<p>Co-founded an AI startup delivering Tailored Process Optimization for attrition risk and retention strategy.</p>
+
+								<h4>Intelligent Nozzle Design using ML</h4>
+								<p>Genetic-algorithm optimization for abrasive waterjet machining; presented at the 23rd International Conference on Waterjetting.</p>
+
+								<h4>AI Winglet Design</h4>
+								<p>MATLAB + CFD loop to auto-design winglets for improved lift-to-drag; ~12% performance gain in simulations.</p>
+							</details>
+
+							<p>If any of this sparks your interest—or you’d like a deeper dive into platform design, evals, or guardrails—feel free to <a href="#contact">contact me</a>.</p>
 							</article>
+
 
 						<!-- About -->
 							<article id="about">
